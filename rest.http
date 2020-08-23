@@ -1,0 +1,25 @@
+GET http://localhost:5000
+
+###Login route
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "user7@gmail.com",
+    "password": "123456"
+}
+
+###Register route
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "email": "user7@gmail.com",
+    "password": "123456"
+}
+
+###Refress token route
+POST http://localhost:5000/auth/refresh-token
+
+###Logout route
+DELETE http://localhost:5000/auth/logout
